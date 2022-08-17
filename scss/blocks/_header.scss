@@ -1,0 +1,130 @@
+.header {
+  padding: 32px 0 40px 0;
+}
+.header__logo-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__big-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__menu-btn {
+  width: 24px;
+  height: 13px;
+  border: none;
+  margin-left: auto;
+  background-color: #fff;
+  background-image: url("/images/tugma.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.site-header__open {
+  display: block;
+}
+.site-header__open .header__menu-btn {
+  width: 18px;
+  height: 19px;
+  background-image: url("/images/x-tugma.svg");
+}
+
+.header__navbar {
+  display: none;
+  width: 223px;
+  margin-left: auto;
+  padding: 40px 63px;
+  background-color: var(--text-color);
+}
+.site-header__open .header__navbar {
+  display: block;
+  position: fixed;
+  right: 30px;
+  top: 88px;
+}
+
+.header__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.header__itms {
+  text-align: center;
+  &:nth-child(2) {
+    margin: 32px 0;
+  }
+}
+
+.header__hreft {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.active-color {
+  color: #203a4c;
+}
+.site-header__open .header__hreft {
+  color: #fff;
+}
+.hiden__body {
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 69px 0 40px 0;
+  }
+  .site-header__open .header__hreft {
+    color: var(--text-color);
+  }
+  .site-header__open .header__navbar {
+    position: static;
+    .active-color {
+      color: #5fb4a2;
+    }
+  }
+  .header__big-box {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .header__logo-box {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .header__menu-btn {
+    display: none;
+  }
+  .header__navbar {
+    position: static;
+    display: block;
+    width: 310px;
+    margin-top: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  .header__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__itms {
+    &:nth-child(2) {
+      margin: 0 42px;
+    }
+  }
+
+  .header__hreft {
+    color: var(--text-color);
+  }
+  .active-color {
+    color: #5fb4a2;
+  }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__big-box">
+          <div class="header__logo-box">
+            <a class="header__logo" href="/index.html">
+              <img src="/images/logo.svg" alt="site-logo-img" />
+            </a>
+            <button class="header__menu-btn" type="button"></button>
+          </div>
+          <nav class="header__navbar">
+            <ul class="header__list">
+              <li class="header__itms">
+                <a class="header__hreft" href="/index.html" target="blank">
+                  HOME</a
+                >
+              </li>
+              <li class="header__itms">
+                <a class="header__hreft" href="/portfolio.html" target="blank"
+                  >PORTFOLIO</a
+                >
+              </li>
+              <li class="header__itms">
+                <a
+                  class="header__hreft active-color"
+                  href="/contact.html"
+                  target="blank"
+                >
+                  CONTACT ME</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="touch">
+        <h2 class="visually-hidden">Let us know</h2>
+        <div class="container">
+          <div class="touch__big-box">
+            <h3 class="touch__big-text">Get in Touch</h3>
+            <div class="touch__mini-box">
+              <p class="touch__mini-text">
+                I’d love to hear about what you’re working on and how I could
+                help. I’m currently looking for a new role and am open to a wide
+                range of opportunities. My preference would be to find a
+                position in a company in London. But I’m also happy to hear
+                about opportunites that don’t fit that description. I’m a
+                hard-working and positive person who will always approach each
+                task with a sense of purpose and attention to detail. Please do
+                feel free to check out my online profiles below and get in touch
+                using the form.
+              </p>
+
+              <ul class="touch__icon-list">
+                <li class="touch__icon-itms">
+                  <img src="/images/qora-github.svg" alt="github" />
+                </li>
+                <li class="touch__icon-itms">
+                  <img src="/images/qora-twitter.svg" alt="twitter" />
+                </li>
+                <li class="touch__icon-itms">
+                  <img src="/images/qora-linkidin.svg" alt="linkidin" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact__big-box">
+            <h3 class="contact__big-text">Contact Me</h3>
+            <form
+              class="contact__form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+              autocomplete="off"
+            >
+              <label class="contact__label">
+                Name
+                <input
+                  class="contact__input"
+                  type="text"
+                  name="user__name"
+                  minlength="2"
+                  placeholder="Jane Appleseed"
+                  required
+                />
+                <span class="contact__error">This field is required</span>
+              </label>
+
+              <label class="contact__label">
+                Email Address
+                <input
+                  class="contact__input"
+                  type="email"
+                  name="user__email"
+                  minlength="4"
+                  placeholder="email@example.com  "
+                  required
+                />
+                <span class="contact__error">This field is required</span>
+              </label>
+
+              <label class="contact__label">
+                Message
+                <textarea
+                  class="contact__text"
+                  name="user__sms"
+                  placeholder="Describe yourself here..."
+                  minlength="5"
+                ></textarea>
+                <span class="contact__error">This field is required</span>
+              </label>
+              <button class="contact__button" type="submit">
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__box">
+          <a class="footer__logo" href="/index.html">
+            <svg
+              width="61"
+              height="32"
+              fill="corenColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M31.347 26.122 15.673 0 0 26.122h31.347ZM60.082 5.878 44.408 32 28.735 5.878h31.347Z"
+                fill="corenColor"
+              />
+            </svg>
+          </a>
+
+          <ul class="footer__list">
+            <li class="footer__itms">
+              <a class="footer__hreft" href="/index.html">HOME</a>
+            </li>
+
+            <li class="footer__itms">
+              <a class="footer__hreft" href="/portfolio.html">PORTFOLIO</a>
+            </li>
+
+            <li class="footer__itms">
+              <a class="footer__hreft" href="/contact.html">CONTACT ME</a>
+            </li>
+          </ul>
+
+          <ul class="footer__icon-list">
+            <li class="footer__icon-itms">
+              <img src="/images/github.svg" alt="github" />
+            </li>
+            <li class="footer__icon-itms">
+              <img src="/images/twitter.svg" alt="twitter" />
+            </li>
+            <li class="footer__icon-itms">
+              <img src="/images/linkidin.svg" alt="linkidin" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

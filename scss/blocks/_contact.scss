@@ -1,0 +1,132 @@
+.contact {
+  padding-bottom: 80px;
+}
+.contact__big-text {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323d;
+}
+
+.contact__label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 30px;
+  color: #5b5a63;
+}
+.contact__input {
+  width: 100%;
+  padding: 9px 0 9px 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #33323d;
+  outline: none;
+  background-color: #ebebec;
+  border: 1px solid transparent;
+  &:focus {
+    border: 1px solid #5fb4a2;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: #33323d;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+  }
+}
+.contact__text {
+  width: 100%;
+  height: 96px;
+  padding: 9px 16px 9px 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #33323d;
+  border: 1px solid transparent;
+  background-color: #ebebec;
+  resize: none;
+  outline: none;
+  &:focus {
+    border: 1px solid #5fb4a2;
+  }
+}
+.contact__text:not(:focus):invalid:not(:placeholder-shown) ~ .contact__error {
+  opacity: 1;
+}
+.contact__text:not(:focus):invalid:not(:placeholder-shown) {
+  border: 1px solid #f43030;
+}
+.contact__input:not(:focus):invalid:not(:placeholder-shown) ~ .contact__error {
+  opacity: 1;
+}
+.contact__input:not(:focus):invalid:not(:placeholder-shown) {
+  border: 1px solid #f43030;
+}
+.contact__error {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #f43030;
+  opacity: 0;
+}
+
+.contact__button {
+  padding: 17px 41px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #203a4c;
+  border: none;
+  transition: all 0.5s ease;
+  &:hover {
+    background: #5fb4a2;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    padding-bottom: 96px;
+  }
+  .contact__big-text {
+    margin-bottom: 32px;
+  }
+  .contact__form {
+    line-height: 30px;
+  }
+  .contact__input {
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding-bottom: 109px;
+  }
+  .contact__big-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .contact__form {
+    min-width: 635px;
+  }
+}

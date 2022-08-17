@@ -6,7 +6,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
 
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body></body>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__big-box">
+          <div class="header__logo-box">
+            <a class="header__logo" href="/index.html">
+              <img src="/images/logo.svg" alt="site-logo-img" />
+            </a>
+            <button class="header__menu-btn" type="button"></button>
+          </div>
+          <nav class="header__navbar">
+            <ul class="header__list">
+              <li class="header__itms">
+                <a
+                  class="header__hreft active-color"
+                  href="/index.html"
+                  target="blank"
+                >
+                  HOME</a
+                >
+              </li>
+              <li class="header__itms">
+                <a class="header__hreft" href="/portfolio.html" target="blank"
+                  >PORTFOLIO</a
+                >
+              </li>
+              <li class="header__itms">
+                <a class="header__hreft" href="/contact.html" target="blank">
+                  CONTACT ME</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__control">
+            <div class="hero__box"></div>
+            <div class="hero__text-box">
+              <h1 class="hero__big-text">
+                Hey, I’m Alex Spencer and I love building beautiful websites
+              </h1>
+              <a class="hero__hreft" href="#">ABOUT ME</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__box">
+            <picture class="about__picture">
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="./images/brat.webp 1x, ./images/brat.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/brat-tablet.webp   1x,
+                  ./images/brat-tablet2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/brat-tell.webp   1x,
+                  ./images/brat-tell2x.webp 2x
+                "
+              />
+              <!-- png default -->
+              <source
+                media="(min-width: 1024px)"
+                srcset="./images/brat.png 1x, ./images/brat2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/brat-tablet.png   1x,
+                  ./images/brat-tablet2x.png 2x
+                "
+              />
+              <img
+                class="about__img"
+                src="./images/brat-tell.png"
+                srcset="/images/brat-tell.png 1x, /images/brat-tell2x.png 2x"
+                alt="man foto"
+                width="290"
+                height="349"
+              />
+            </picture>
+
+            <div class="about__mini-box">
+              <h2 class="about__big-text">About Me</h2>
+              <p class="about__mini-text">
+                I’m a junior front-end developer looking for a new role in an
+                exciting company. I focus on writing accessible HTML, using
+                modern CSS practices and writing clean JavaScript. When writing
+                JavaScript code, I mostly use React, but I can adapt to whatever
+                tools are required. I’m based in London, UK, but I’m happy
+                working remotely and have experience in remote teams. When I’m
+                not coding, you’ll find me outdoors. I love being out in nature
+                whether that’s going for a walk, run or cycling. I’d love you to
+                check out my work.
+              </p>
+              <a class="about__hreft" href="/portfolio.html">GO TO PORTFOLIO</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="Interested">
+        <div class="container">
+          <div class="Interested__box">
+            <div class="Interested__tex-box">
+              <h2 class="Interested__text">
+                Interested in doing a project together?
+              </h2>
+            </div>
+            <span class="Interested__span"></span>
+            <a class="Interested__hreft" href="/contact.html">CONTACT ME</a>
+          </div>
+        </div>
+      </article>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__box">
+            <a class="footer__logo" href="/index.html">
+              <svg
+                width="61"
+                height="32"
+                fill="corenColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M31.347 26.122 15.673 0 0 26.122h31.347ZM60.082 5.878 44.408 32 28.735 5.878h31.347Z"
+                  fill="corenColor"
+                />
+              </svg>
+            </a>
+
+            <ul class="footer__list">
+              <li class="footer__itms">
+                <a class="footer__hreft" href="/index.html">HOME</a>
+              </li>
+
+              <li class="footer__itms">
+                <a class="footer__hreft" href="/portfolio.html">PORTFOLIO</a>
+              </li>
+
+              <li class="footer__itms">
+                <a class="footer__hreft" href="/contact.html">CONTACT ME</a>
+              </li>
+            </ul>
+
+            <ul class="footer__icon-list">
+              <li class="footer__icon-itms">
+                <img src="/images/github.svg" alt="github" />
+              </li>
+              <li class="footer__icon-itms">
+                <img src="/images/twitter.svg" alt="twitter" />
+              </li>
+              <li class="footer__icon-itms">
+                <img src="/images/linkidin.svg" alt="linkidin" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
