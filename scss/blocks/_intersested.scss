@@ -53,7 +53,7 @@
 
 @media screen and (min-width: 768px) {
   .Interested {
-    padding-bottom: 150px;
+    padding-bottom: 96px;
   }
 
   .Interested__tex-box {
@@ -78,6 +78,9 @@
     }
   }
   @media screen and (min-width: 1000px) {
+    .Interested {
+      padding-bottom: 150px;
+    }
     .Interested__span {
       width: 37%;
     }

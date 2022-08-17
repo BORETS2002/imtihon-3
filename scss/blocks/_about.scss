@@ -18,7 +18,6 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 42px;
-  letter-spacing: -0.357143px;
   color: #33323d;
 }
 .about__mini-text {
@@ -28,7 +27,6 @@
   font-size: 16px;
   line-height: 30px;
   color: #33323d;
-  mix-blend-mode: normal;
   opacity: 0.8;
 }
 .about__hreft {
@@ -44,8 +42,8 @@
   text-decoration: none;
   transition: all 0.5s ease;
   &:hover {
-    background-color: #33323d;
     color: #fff;
+    background-color: #33323d;
   }
 }
 
@@ -73,6 +71,9 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .about {
+    padding-bottom: 150px;
+  }
   .about__box {
     max-width: 100%;
   }
